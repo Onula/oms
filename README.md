@@ -1,8 +1,6 @@
 # OMS — Order Management System
 
-A hospitality order management system for restaurants, cafes, and bars.
-
-Built as a portfolio project focused on backend architecture: modular monolith, hexagonal architecture, domain-driven design, and real-time UI updates.
+A hospitality order management system (restaurants, cafes, bars etc.)
 
 ---
 

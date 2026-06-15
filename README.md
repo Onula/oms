@@ -71,35 +71,11 @@ Application Service → Event Publisher Port → Spring Event Publisher Adapter 
 
 ---
 
-## Getting Started
-
 ### Requirements
 
 - Java 21
 - Maven
 - Docker (for PostgreSQL)
-- Node.js and npm (for the frontend)
-
-### Backend
-
-```bash
-git clone <repository-url>
-cd oms
-docker compose up -d
-mvn spring-boot:run
-```
-
-
----
-
-## Testing
-
-```bash
-mvn clean test
-```
-
-Tests cover application use cases, domain rules, module boundaries, exception handling, and important backend flows. Architecture tests verify that modules do not access each other's internals.
-
 ---
 
 ## Documentation

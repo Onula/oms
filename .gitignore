@@ -1,0 +1,79 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### Logs
+
+*.log
+logs/
+spring.log
+build_output.txt
+test_output.log
+
+### Environment / local config
+
+.env
+.env.local
+.env.*.local
+application-local.properties
+application-dev-local.properties
+
+### STS
+
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA
+
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### NetBeans
+
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code
+
+.vscode/
+
+### OS files
+
+.DS_Store
+Thumbs.db
+
+### Database / local data
+
+*.db
+*.sqlite
+*.sqlite3
+
+### Docker local overrides
+
+docker-compose.override.yml
+
+### Temporary files
+
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+
+# Private documentation
+docs/private/

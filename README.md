@@ -1,6 +1,6 @@
 # OMS — Order Management System
 
-A hospitality order management system (restaurants, cafes, bars etc.)
+A hospitality order management system for restaurants, cafes, and bars.
 
 ---
 
@@ -35,7 +35,7 @@ Key decisions:
 - **Database-Level Consistency** — transactions, constraints, indexes, and pessimistic locking protect critical flows.
 - **Scheduled Background Work** — time-based reservation actions run through scheduled application use cases.
 
-For detailed decisions, see [`docs/adr/ADR-000-OMS-Architecture-Decision-Summary.md`](docs/adr/ADR-000-OMS-Architecture-Decision-Summary.md).
+For detailes, [`docs/adr/ADR-000-OMS-Architecture-Decision-Summary.md`](docs/adr/ADR-000-OMS-Architecture-Decision-Summary.md).
 
 ---
 
@@ -45,12 +45,11 @@ For detailed decisions, see [`docs/adr/ADR-000-OMS-Architecture-Decision-Summary
 | --- | --- |
 | Backend | Java 21, Spring Boot |
 | Architecture | Modular Monolith, Hexagonal Architecture, DDD |
-| Persistence | PostgreSQL, Spring Data JPA, Hibernate, Flyway |
+| Persistence | PostgreSQL, Spring Data JPA, Hibernate |
 | Module metadata | Spring Modulith |
 | Events | Spring application events |
 | Real-time | Spring WebSocket, STOMP |
 | API errors | RFC 9457 Problem Details |
-| Frontend | React, TypeScript, Vite |
 | Tooling | Maven, Docker |
 
 ---
@@ -71,23 +70,21 @@ Application Service → Event Publisher Port → Spring Event Publisher Adapter 
 
 ---
 
+## Getting Started
+
 ### Requirements
 
 - Java 21
 - Maven
 - Docker (for PostgreSQL)
----
 
-## Documentation
+### 
 
-```text
-docs/
-└── adr/
-    └── ADR-000-OMS-Architecture-Decision-Summary.md
+```bash
+git clone <repository-url>
+cd oms
+docker compose up -d
+mvn spring-boot:run
 ```
 
 ---
-
-## License
-
-Personal learning and portfolio project.
